@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+    <h1>Menu</h1>
+
+    <!-- <table>
+      <tr>
+        <th>Name</th>
+        <th>Ingridients</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Margherita</td>
+        <td>Tomato sause, mozarella, basil</td>
+        <td>10$</td>
+      </tr>
+      <tr>
+        <td>Pepperoni</td>
+        <td>Salami, cheese, garlic</td>
+        <td>15$</td>
+      </tr>
+      <tr>
+        <td>Four Chesee</td>
+        <td>Tomato sause, 4 types of chesee (blue, soft, creamy and hard)</td>
+        <td>15$</td>
+    </table> --> 
+
+    <div id="menu">
+        <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Ingredients</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pizza in pizzas%}
+            <tr>
+                <td>
+                    <a>{{ pizza.name }}</a>
+                </td>
+                <td>{{ pizza.ingredients }}</td>
+                <td>{{ pizza.price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+{% endblock %}

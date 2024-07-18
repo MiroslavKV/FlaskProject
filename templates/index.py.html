@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}The Pizza Spot{% endblock %}
+
+{% block content %}
+    <h1>The Pizza Spot</h1>
+    <h2>Welcome to "The Pizza Spot"!</h2>
+    <div>
+        <img src="/static/pizza1.png" width="250" height="250">
+        <a href="{{ url_for('menu_page') }}"><br>Check the menu</a>
+        <a href="{{ url_for('order_page') }}"><br>Make your order</a>
+    </div>
+{% endblock %}
+

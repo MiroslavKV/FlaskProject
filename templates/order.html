@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Order Pizza{% endblock %}
+{% block content %}
+    <h1>
+        The Pizza Spot
+    </h1>
+    <h3> Make your order!</h3>
+    <div>
+        <h3>Margherita</h3>
+        <img src="/static/Margherita.png" width="250" height="250">
+        <h4>Price - 10$</h4>
+        <h4>A classic Italian pizza topped with fresh tomato sauce, mozzarella cheese, and fragrant basil.</h4>
+        <button type="button" onclick="alert('Added to the order!')">Order</button>
+
+        <h3>Pepperoni</h3>
+        <img src="/static/Pepperoni.png" width="250" height="250">
+        <h4>Price - 15$</h4>
+        <h4>A popular pizza featuring a savory tomato sauce, mozzarella cheese, and spicy pepperoni slices.</h4>
+        <button type="button" onclick="alert('Added to the order!')">Order</button>
+
+        <h3>Four Cheese</h3>
+        <img src="/static/Four Cheese.png" width="250" height="250">
+        <h4>Price - 15$</h4>
+        <h4>A rich pizza topped with a blend of mozzarella, gorgonzola, parmesan, and goat cheese.</h4>
+        <button type="button" onclick="alert('Added to the order!')">Order</button>
+    </div>
+{% endblock %}
